@@ -20,4 +20,9 @@ test "should get about" do
 	assert_response :success
 	assert_select "title", "About| Scottish Dance Music Training site"
 end
+test "should get contact" do
+  get :contact
+  assert_response :success
+  assert_select "title", "contact | Scottish Dance Music Training site"
+end
 end
